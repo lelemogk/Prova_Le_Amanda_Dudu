@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clock: 1
-  cooldown: 1
+  cooldown: 3
   prefabPipe: {fileID: 8524499635644157634, guid: 7152309beabc0454ca80550f24ba85d8, type: 3}
 --- !u!4 &1903371310
 Transform:
