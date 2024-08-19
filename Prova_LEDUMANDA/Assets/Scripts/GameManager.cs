@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     #endregion
     int score;
-    const string playerPrefabPath = "Prefabs/Player";
+    /*const string playerPrefabPath = "Prefabs/Player";
 
     int playersInGame;
     List<PlayerControler> playerList = new List<PlayerControler>();
@@ -47,5 +47,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             CreatePlayer();
         }
-    }
+    }*/
+
+    
 }

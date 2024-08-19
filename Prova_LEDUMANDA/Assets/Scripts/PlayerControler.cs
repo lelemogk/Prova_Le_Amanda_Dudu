@@ -16,6 +16,7 @@ public class PlayerControler : MonoBehaviourPun
 
     private void Update()
     {
+        int r = Random.Range(1,1);
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             rb.velocity = Vector2.up * forcaPulo;
