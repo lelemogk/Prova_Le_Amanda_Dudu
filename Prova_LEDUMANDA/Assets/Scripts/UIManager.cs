@@ -24,11 +24,7 @@ public class UIManager : MonoBehaviour
 
     #endregion
 
-
     [SerializeField] Text textScore;
-
-
-
 
     public void UpdateTextScore(int score)
     {
