@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
     #endregion
-    int score;
+    int score, health;
+
     /*const string playerPrefabPath = "Prefabs/Player";
 
     int playersInGame;
