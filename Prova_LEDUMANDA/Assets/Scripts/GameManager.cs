@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void CreatePlayer()
     {
         PlayerControler player = NetworkManager.instance.Instantiate(playerPrefabPath, new Vector3(30, 1, 30), Quaternion.identity).GetComponent<PlayerControler>();
-       // player.photonView.RPC("Initialize", RpcTarget.All);
+        player.photonView.RPC("Initialize", RpcTarget.All);
     }
 
     [PunRPC]
@@ -50,6 +50,5 @@ public class GameManager : MonoBehaviourPunCallbacks
         }
     }*/
 
-
-
+    
 }
