@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 139ee17555b24714a87d581ed15e4a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
 --- !u!4 &209727509
 Transform:
   m_ObjectHideFlags: 0
@@ -184,7 +185,7 @@ Transform:
   m_GameObject: {fileID: 209727506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 540, y: 960, z: 0}
+  m_LocalPosition: {x: -1.92, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -515,8 +516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 377, y: 891}
-  m_SizeDelta: {x: 266.7548, y: 87.5496}
+  m_AnchoredPosition: {x: 367.92963, y: 219.82056}
+  m_SizeDelta: {x: 182.8955, y: 65.9085}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1794104942
 MonoBehaviour:
@@ -565,7 +566,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65.35
+  m_fontSize: 44.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -645,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clock: 0
-  cooldown: 1
+  cooldown: 4
   prefabPipe: {fileID: 8524499635644157634, guid: 7152309beabc0454ca80550f24ba85d8, type: 3}
 --- !u!4 &1903371310
 Transform:

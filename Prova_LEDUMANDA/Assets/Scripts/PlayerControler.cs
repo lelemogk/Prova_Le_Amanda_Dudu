@@ -1,6 +1,7 @@
 using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControler : MonoBehaviourPun
@@ -22,4 +23,7 @@ public class PlayerControler : MonoBehaviourPun
             rb.velocity = Vector2.up * forcaPulo;
         }
     }
+
+
+    
 }

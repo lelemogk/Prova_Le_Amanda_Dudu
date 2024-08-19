@@ -21,8 +21,14 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
     #endregion
-    int score;
-    /*const string playerPrefabPath = "Prefabs/Player";
+    [SerializeField] public int score;
+
+    private void UpdateScore(int score)
+    {
+        UIManager.instance.UpdateTextScore(score);
+    }
+
+    const string playerPrefabPath = "Prefabs/Player";
 
     int playersInGame;
     List<PlayerControler> playerList = new List<PlayerControler>();
@@ -35,7 +41,7 @@ public class GameManager : MonoBehaviourPunCallbacks
 
     private void CreatePlayer()
     {
-        PlayerControler player = NetworkManager.instance.Instantiate(playerPrefabPath, new Vector3(30, 1, 30), Quaternion.identity).GetComponent<PlayerControler>();
+        PlayerControler player = NetworkManager.instance.Instantiate(playerPrefabPath, transform.position, Quaternion.identity).GetComponent<PlayerControler>();
         player.photonView.RPC("Initialize", RpcTarget.All);
     }
 
@@ -47,7 +53,7 @@ public class GameManager : MonoBehaviourPunCallbacks
         {
             CreatePlayer();
         }
-    }*/
+    }
 
-    
+
 }
