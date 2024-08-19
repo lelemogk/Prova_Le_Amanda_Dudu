@@ -1,10 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-public class NetworkManager : MonoBehaviour
-{
-    using UnityEngine; // Para usar funcionalidades do Unity
 using Photon.Pun; // Para usar o Photon PUN (Photon Unity Networking)
 using Photon.Realtime; // Para usar funcionalidades em tempo real do Photon
 
@@ -122,5 +116,4 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         return list; // Retorna a lista de jogadores
     }
-}
 }

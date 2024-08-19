@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MenuManager : MonoBehaviour
-{
+
     public class MenuManager : MonoBehaviour
     {
         // Define variáveis privadas que podem ser configuradas no Inspector do Unity.
@@ -105,4 +105,4 @@ public class MenuManager : MonoBehaviour
             lobby.SetActive(onLobby);
         }
     }
-}
+
