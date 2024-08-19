@@ -12,6 +12,8 @@ public class PlayerControler : MonoBehaviourPun
     Rigidbody2D rb;
 
     UIManager managerUI;
+    int health;
+    int score;
 
     private void Start()
     {
@@ -20,7 +22,7 @@ public class PlayerControler : MonoBehaviourPun
 
     private void Update()
     {
-        int r = Random.Range(1,1);
+      //  int r = Random.Range(1,1);
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             rb.velocity = Vector2.up * forcaPulo;
@@ -29,7 +31,7 @@ public class PlayerControler : MonoBehaviourPun
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.CompareTag("Obstacle") && GameManager.health > 1)
+       if (hit.gameObject.CompareTag("Obstacle") && health > 1)
         {
             health = health - 10;
         }
@@ -46,6 +48,5 @@ public class PlayerControler : MonoBehaviourPun
             // atualizar o recorde do jogador
         }
 
-        UIManager.GameOver();
     }
 }
