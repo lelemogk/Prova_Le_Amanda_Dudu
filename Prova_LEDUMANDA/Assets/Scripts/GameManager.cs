@@ -21,9 +21,8 @@ public class GameManager : MonoBehaviourPunCallbacks
     }
 
     #endregion
-    [SerializeField] public int score;
 
-    private void UpdateScore(int score)
+    public void UpdateScore(int score)
     {
         UIManager.instance.UpdateTextScore(score);
     }
@@ -42,7 +41,6 @@ public class GameManager : MonoBehaviourPunCallbacks
     private void CreatePlayer()
     {
         PlayerControler player = NetworkManager.instance.Instantiate(playerPrefabPath, transform.position, Quaternion.identity).GetComponent<PlayerControler>();
-        player.photonView.RPC("Initialize", RpcTarget.All);
     }
 
     [PunRPC]

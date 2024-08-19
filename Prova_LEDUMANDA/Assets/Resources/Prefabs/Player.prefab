@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forcaPulo: 5
+  score: 10
 --- !u!50 &6270175804598977561
 Rigidbody2D:
   serializedVersion: 4
