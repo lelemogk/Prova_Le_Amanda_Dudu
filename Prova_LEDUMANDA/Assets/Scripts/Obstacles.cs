@@ -2,9 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PipeMove : MonoBehaviour
+public class Obstacles : MonoBehaviour
 {
     [SerializeField] float speedPipeMove;
+
+    float leftEdge;
+
+    private void Start()
+    {
+        
+    }
 
     private void Update()
     {

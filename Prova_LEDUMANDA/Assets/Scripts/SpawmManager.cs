@@ -16,7 +16,7 @@ public class SpawmManager : MonoBehaviour
         if (clock <= 0) 
         {
             clock = cooldown;
-            Instantiate(prefabPipe, new Vector3(), quaternion.identity);
+           // Instantiate(prefabPipe, new Vector3(5, , quaternion.identity);
         }
         else 
         {
