@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +25,7 @@ public class UIManager : MonoBehaviour
 
     #endregion
 
-    [SerializeField] Text textScore;
+    [SerializeField] TextMeshProUGUI textScore;
 
     public void UpdateTextScore(int score)
     {

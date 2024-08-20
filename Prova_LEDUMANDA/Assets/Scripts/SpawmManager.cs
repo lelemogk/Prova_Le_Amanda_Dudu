@@ -29,6 +29,5 @@ public class SpawmManager : MonoBehaviour
         GameObject newPipe = Instantiate(prefabPipe, transform.position, Quaternion.identity);
         newPipe.transform.position += new Vector3(0, Random.Range(mim, max));
     }
-            // Instancia o prefab na posição x correspondente ao limite da tela (lado direito) e em uma posição y aleatória entre -2 e 2.
 }
 
